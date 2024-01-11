@@ -1,0 +1,19 @@
+{
+  "name": "web-agency-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "install": "^0.13.0",
+    "next": "14.0.4",
+    "npm": "^10.3.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "sass": "^1.69.7"
+  }
+}
