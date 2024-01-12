@@ -1,0 +1,105 @@
+@import '../../app/variables';
+
+.footer-area {
+    background: #2C2762;
+    color: white;
+    padding: 0px 100px;
+    padding-top: 124px;
+    padding-bottom: 155px;
+
+    .group {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .group-box {
+            display: flex;
+            flex-direction: column;
+            color: #ffffff;
+
+            .service-title {
+                font-family: "Space Grotesk-Bold", Helvetica;
+                font-size: 24px;
+                font-weight: 700;
+                height: 29px;
+                letter-spacing: -0.24px;
+                line-height: 28.8px;
+                white-space: nowrap;
+                border-bottom: 1x solid red;
+            }
+
+            .underline {
+                width: 87px;
+                height: 1px;
+                background: rgba(143, 143, 143, 0.40);
+            }
+
+            .footer-logo {
+                svg {
+                    font-size: 137px;
+                }
+            }
+
+            .address {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                margin-bottom: 33px;
+            }
+
+            .service-links {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                margin-top: 10px;
+                margin-bottom: 46px;
+
+                .link {
+                    text-decoration: none;
+                    color: #FFF;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+            }
+
+            .update-text {
+                margin-top: 42px;
+                width: 245px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+            }
+
+            .company-email {
+                text-align: left;
+                border-bottom: 1px solid $border-color;
+                ;
+                width: fit-content;
+                margin-top: 55px;
+                cursor: pointer;
+
+                a {
+                    padding-bottom: 6px;
+                    color: #FFF;
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+
+                    i {
+                        svg {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import '../../app/variables';
+
+.btn {
+    display: flex;
+    width: 165.724px;
+    height: 55.907px;
+    padding: 7.987px 23.96px;
+    justify-content: center;
+    align-items: center;
+    font-family: $font;
+    gap: 7.987px;
+    flex-shrink: 0;
+    border-radius: 3.993px;
+    box-shadow: 0px 3.993px 3.993px 0px rgba(43, 37, 37, 0.12);
+    cursor: pointer;
+
+    .bnt-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            color: $primary-color;
+            font-size: 25px;
+        }
+    }
+}
+
+.btn-primary {
+    border: 0.998px solid #FFF;
+    color: $primary-color;
+    background: $secondary-color;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        border: 0.998px solid $secondary-color;
+        color: $secondary-color;
+        background: $primary-color;
+    }
+
+    &:hover .bnt-icon {
+        svg {
+            color: $secondary-color;
+        }
+    }
+
+}

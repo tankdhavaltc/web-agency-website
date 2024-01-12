@@ -1,0 +1,81 @@
+@import '../../app/variables';
+
+.nav-bar {
+    background: linear-gradient(180deg, #2D2D2D 0%, rgba(45, 45, 45, 0.06) 100%);
+    padding-top: 28px;
+    padding-bottom: 32px;
+    padding-left: 100px;
+
+    .nav-links {
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 33px;
+            flex-wrap: wrap;
+
+            .logo {
+                list-style: none;
+
+                .logo-icon {
+                    svg {
+                        width: 145.445px;
+                        height: 37.422px;
+                    }
+                }
+
+                a {
+                    color: $primary-color;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%;
+                    text-decoration: none;
+                    padding: 0;
+                    margin: 0;
+
+                }
+            }
+
+            .link {
+                list-style: none;
+                border-bottom: 3px solid transparent;
+                transition: all 0.2s ease-in-out;
+
+                a {
+                    color: $primary-color;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%;
+                    text-decoration: none;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                &:hover {
+                    border-bottom: 3px solid $secondary-color;
+                }
+            }
+
+
+            .active {
+                border-bottom: 3px solid $secondary-color;
+            }
+
+        }
+    }
+}
+
+@media (max-width:450px) {
+    nav.nav-bar {
+        padding: 10px;
+
+        .nav-links {
+            ul {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    }
+}
